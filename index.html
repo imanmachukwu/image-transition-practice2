@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Transition Practice</title>
+    <link href="style.css" rel="stylesheet" />
+    <script src="https://unpkg.com/@barba/core"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+</head>
+<body data-barba="wrapper">
+    <header>
+        <a href="index.html">Home</a>
+        <ul class="header_links">
+            <li class="header_link">Contact</li>
+            <li class="header_link">About</li>
+            <li class="header_link">Team</li>
+        </ul>
+    </header>
+    <main id="hero_container" data-barba="container" data-barba-namespace="home">
+        <h1 id="hero_text">Crafting future memories</h1>
+        <a href="projects/project.html">
+            <div class="project_image">
+                <img src="images/1.jpg" />
+                <p>1. LVMH Models</p>
+            </div>
+        </a>
+    </main>
+ 
+    <script src="app.js" type="module"></script>
+</body>
+</html>
